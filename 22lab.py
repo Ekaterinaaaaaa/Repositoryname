@@ -48,52 +48,6 @@ def graph():
 	g.es["label"] = [i[2] for i in listok]
 	igraph.plot(g, bbox = (600,600), vertex_label_color = 'black',
 vertex_label_size = 10, vertex_size = 20, vertex_color = 'white' )
- 
-#Сам алгоритм
-#def deikster(k, matrix, name, flag = False):
-	#verticles_weight = [] #массив весов
-	#visited = []	#список посещенных вершин
-	 
-	#for i in range(len(matrix)):
-	#	if i == k:
-	#		verticles_weight.append(0)
-	#	else:
-	#		verticles_weight.append(float("inf"))
-	 
-	#visited.append(k)
-	 
-	#while len(visited) != len(verticles_weight):
-	#	current_ver = visited[-1]
-	#	for i in range(len(matrix)):
-	#		if matrix[current_ver][i] != 0:
-	#			if verticles_weight[current_ver] + matrix[current_ver][i] < verticles_weight[i]:
-	#				verticles_weight[i] = verticles_weight[current_ver] + matrix[current_ver][i]
-	 
-	#		if matrix[i][current_ver] != 0:
-	#			if verticles_weight[current_ver] + matrix[i][current_ver] < verticles_weight[i]:
-	#				verticles_weight[i] = verticles_weight[current_ver] + matrix[i][current_ver]
-	 
-	#	min_weight = float("inf")
-	#	ver = 0
-	 
-	#	for i in range(len(verticles_weight)):
-	#		if i not in visited and verticles_weight[i] < min_weight:
-	#			ver = i
-	#			min_weight = verticles_weight[i]
-	 
-	#	visited.append(ver)
-	 
-	#if not flag:
-	#	print(verticles_weight)
-		 
-	#	for i in range(len(name)):
-	#		if i != k:
-	#			print(f"{name[k]} -> {name[i]}: {verticles_weight[i]}")
-	#	 
-	#	graph()
-	#else:
-	#	return verticles_weight
-
 
 
 def grid(m, flag = False):
